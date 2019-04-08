@@ -1,0 +1,116 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-image: url(../imges/pattern_1335.png);
+}
+.wraper {
+    max-width: 1024px;
+
+    /* background: rgba(113, 93, 67, 0.701); */
+    margin: 0 auto;
+    /* height: inherit; */
+}
+header {
+    /* margin: 20px auto; */
+    /* overflow: hidden; */
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background: whitesmoke;
+}
+header a img {
+    /* border: 1px solid #000; */
+    width: 250px;
+    /* height: 250px; */
+    /* float: left; */
+    /* box-shadow: 5px 5px 20px rgb(91, 85, 85); */
+}
+
+h1 {
+    color: rgb(140, 98, 55);
+    /* text-align: center; */
+    text-shadow: 0px 2px 5px rgb(94, 93, 93), 0px 2px 5px rgb(188, 180, 180);
+    font-size: 100px;
+    font-family: 'Indie Flower', cursive;
+    /* font-weight: 700; */
+    /* background: grey; */
+    /* border: 1px solid #000; */
+    margin-right: 100px;
+
+    /* overflow: hidden; */
+}
+/* .clearfix ::after,
+.clearfix ::before {
+    content: '';
+    display: block;
+    clear: both;
+} */
+.nav {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    /* padding: 50px; */
+    background: whitesmoke;
+}
+
+.nav a {
+    width: 200px;
+
+    transition: background 0.5s;
+    display: block;
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+    margin-top: 100px;
+    /* border-radius: 10px; */
+    box-shadow: 0px 5px 10px rgb(101, 99, 99), 0px 5px 10px rgb(188, 180, 180);
+    /* font-weight: 00; */
+    color: rgb(234, 203, 142);
+    box-sizing: border-box;
+    text-shadow: 0px 1px 1px rgb(58, 56, 56);
+    /* line-height: 90px; */
+    padding: 10px;
+    background: hsl(20, 70%, 40%);
+    /* transition: relative 0.5s; */
+}
+.nav a:hover {
+    box-shadow: 0px 5px 10px gray;
+    background: hsl(20, 100%, 40%);
+}
+.nav a:active {
+    position: relative;
+    top: 2px;
+}
+section {
+    background: whitesmoke;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+h2 {
+    /* width: 300px;
+    height: 100px; */
+    /* box-sizing: border-box; */
+    font-size: 50px;
+
+    margin: 100px auto;
+}
+.box-1 {
+    width: 600px;
+    min-height: 100px;
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 20px;
+    background: rgb(234, 203, 142);
+}
+.box-2 {
+    width: 400px;
+    min-height: 100px;
+    box-sizing: border-box;
+    text-align: justify;
+    padding: 20px;
+    background: rgb(234, 203, 142);
+}
