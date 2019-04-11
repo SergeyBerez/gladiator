@@ -6,10 +6,10 @@ li {
   padding: 0;
 }
 body {
-  background-image: url(pattern_728.png);
+  background-image: url(../imges/pattern_1335.png);
 }
 .wrap {
-  max-width: 1260px;
+  max-width: 1300px;
   margin: 0 auto;
   background: rgb(199, 180, 142);
   overflow: hidden;
@@ -17,18 +17,18 @@ body {
   /* height: inherit; */
 }
 .main-header {
-  min-height: 250px;
-  background: rgb(54, 109, 228);
+  /* min-height: 250px;
+  background: rgb(54, 109, 228); */
 }
 .main-header .logo {
-  width: 250px;
+  width: 150px;
   float: left;
 }
 h1 {
   padding-left: 200px;
   float: left;
   font-size: 40px;
-  line-height: 230px;
+  line-height: 120px;
 }
 
 .adress {
@@ -37,8 +37,8 @@ h1 {
 }
 
 .menu {
-  background: rgb(228, 94, 94);
-  min-height: 50px;
+  /* background: rgb(228, 94, 94);
+  min-height: 50px; */
 }
 
 .menu ul {
@@ -68,15 +68,24 @@ h1 {
   opacity: 0.7;
 }
 main {
-  min-height: 200px;
-  background: rgb(228, 94, 210);
+  /* min-height: 200px;
+  background: rgb(228, 94, 210); */
 }
-.content {
+main .galery {
   padding-top: 30px;
   text-align: center;
+  border: 5px solid rgba(107, 99, 83, 0.562);
+  overflow: hidden;
+  width: 100%;
+  background: rgb(160, 126, 63);
+  box-sizing: border-box;
 }
-.content-foto img {
-  width: 300px;
+.foto {
+  float: left;
+  width: 33.3%;
+  box-sizing: border-box;
+  padding: 20px;
+  /* border: 5px solid rgba(107, 99, 83, 0.562); */
 }
 
 footer {
