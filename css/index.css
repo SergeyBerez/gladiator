@@ -20,9 +20,21 @@ body {
   /* min-height: 150px;
   background: rgb(54, 109, 228); */
 }
-.main-header .logo {
-  width: 150px;
-  float: left;
+.flex-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 -30px;
+}
+.main-header a {
+    flex-basis: 300px;
+    display: block;
+
+    background: rgba(128, 128, 128, 0.528);
+}
+.main-header img {
+    width: 100%;
 }
 h1 {
   padding-left: 200px;
