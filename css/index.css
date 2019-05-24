@@ -14,11 +14,25 @@ body {
   background: rgb(199, 180, 142);
   overflow: hidden;
 
-  /* height: inherit; */
+  height: inherit;
+}
+
+@media screen (max-width 600px) {
+  .main-header .logo {
+    width: 50px;
+    float: none;
+  }
+
+  h1 {
+    padding-left: 200px;
+    float: none;
+    font-size: 20px;
+    line-height: 120px;
+  }
 }
 .main-header {
-  /* min-height: 150px;
-  background: rgb(54, 109, 228); */
+  /* min-height: 550px; */
+  /* background: rgb(54, 109, 228); */
 }
 .main-header .logo {
   width: 150px;
@@ -67,9 +81,12 @@ h1 {
 
   opacity: 0.7;
 }
+.active {
+  text-shadow: 1px 1px 1px rgb(48, 40, 40);
+}
 main {
-  /* min-height: 500px;
-  background: rgb(228, 94, 210); */
+  /* background: rgb(228, 94, 210); */
+  /* min-height: 1000px; */
 }
 main .content {
   padding-top: 30px;
@@ -87,17 +104,34 @@ main .content {
   float: left;
   border: 1px solid #000;
   min-height: 500px;
+  margin-right: 50px;
+  margin-left: 50px;
 }
 .box2 {
   width: 40%;
-  float: right;
+  float: left;
   border: 1px solid #000;
   min-height: 500px;
 }
 footer {
-  /* background: rgb(107, 52, 52);
-  height: 200px; */
+  /* min-height: 200px; */
 }
 .cotial {
   min-height: 100px;
+}
+.cotial ul {
+  margin-top: 50px;
+
+  list-style-type: none;
+}
+.cotial li {
+  display: inline-block;
+  margin: 0 10px;
+
+  /* height: 55px; */
+}
+.adress-footer {
+  font-size: 20px;
+  float: left;
+  margin-right: 100px;
 }
