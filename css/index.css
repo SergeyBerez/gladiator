@@ -1,115 +1,122 @@
+@import url('https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap');
 body,
 html,
 ul,
 li {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quantico', sans-serif;
 }
 body {
-  background-image: url(../imges/pattern_1335.png);
+    background-image: url(../imges/pattern_1335.png);
 }
 .wrap {
-  max-width: 1300px;
-  margin: 0 auto;
-  background: rgb(199, 180, 142);
-  overflow: hidden;
-
-  /* height: inherit; */
+    max-width: 960px;
+    margin: 0 auto;
+    /* height: inherit; */
 }
 .main-header {
-  /* min-height: 150px;
+    /* min-height: 150px;
   background: rgb(54, 109, 228); */
 }
 .flex-content {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
-    margin: 0 -30px;
+    /* margin: 0 -50px; */
+    background: rgba(219, 210, 82, 0.363);
+    padding: 0 0 50px 0;
 }
 .main-header a {
-    flex-basis: 300px;
+    flex-basis: 200px;
     display: block;
-
-    background: rgba(128, 128, 128, 0.528);
+}
+.acitve-page {
+    background: rgb(160, 126, 63);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 .main-header img {
     width: 100%;
 }
 h1 {
-  padding-left: 200px;
-  float: left;
-  font-size: 40px;
-  line-height: 120px;
+    font-size: 50px;
+    flex-basis: 400px;
+    font-weight: bold;
+    color: beige;
+    text-shadow: 0 0px 5px rgba(36, 34, 34, 0.59);
+    flex-grow: 1;
 }
 
 .adress {
-  font-size: 20px;
-  float: right;
+    font-size: 14px;
+
+    color: beige;
+    /* margin-bottom: auto; */
+    align-self: flex-start;
+
+    /* order: 1; */
 }
 
-.menu {
-  /* background: rgb(228, 94, 94); */
-  /* min-height: 70px; */
+.menu .main-navigation {
+    /* margin-top: 50px; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+    background: rgba(219, 210, 82, 0.363);
+    list-style-type: none;
+}
+.main-navigation li {
+    padding: 20px;
+    /* height: 55px; */
 }
 
-.menu ul {
-  /* margin-top: 50px; */
-  min-height: 50px;
-  background: rgba(219, 210, 82, 0.363);
-}
-.menu li {
-  display: inline-block;
-  padding: 0 40px;
-  /* height: 55px; */
-}
+.main-navigation li a {
+    color: beige;
+    text-decoration: none;
 
-.menu li a {
-  text-decoration: none;
-  line-height: 50px;
-  color: #000;
-  display: block;
-  font-size: 18px;
+    /* display: block; */
+    font-size: 18px;
 
-  /* background: rgb(150, 140, 140); */
+    /* background: rgb(150, 140, 140); */
 }
 
-.menu li a:hover {
-  text-shadow: 1px 1px 1px rgb(221, 207, 207);
-
-  opacity: 0.7;
+.main-navigation li a:hover {
+    text-shadow: 0px 2px 5px rgba(118, 82, 24, 0.798);
 }
 main {
-  /* min-height: 500px;
+    /* min-height: 500px;
   background: rgb(228, 94, 210); */
 }
 main .content {
-  padding-top: 30px;
-  background: rgb(160, 126, 63);
-  border: 5px solid rgba(107, 99, 83, 0.562);
-  overflow: hidden;
-  width: 100%;
-  box-sizing: border-box;
+    padding-top: 30px;
+    background: rgb(160, 126, 63);
+
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
 }
 .content-foto img {
-  width: 600px;
+    width: 600px;
 }
 .box1 {
-  width: 40%;
-  float: left;
-  border: 1px solid #000;
-  min-height: 500px;
+    width: 40%;
+    float: left;
+    border: 1px solid #000;
+    min-height: 500px;
 }
 .box2 {
-  width: 40%;
-  float: right;
-  border: 1px solid #000;
-  min-height: 500px;
+    width: 40%;
+    float: right;
+    border: 1px solid #000;
+    min-height: 500px;
 }
 footer {
-  /* background: rgb(107, 52, 52);
+    /* background: rgb(107, 52, 52);
   height: 200px; */
 }
 .cotial {
-  min-height: 100px;
+    min-height: 100px;
 }
