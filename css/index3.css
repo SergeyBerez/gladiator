@@ -1,0 +1,48 @@
+.wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: rgb(199, 180, 142);
+  overflow: hidden;
+}
+
+.main-header {
+  /* min-height: 550px; */
+  /* background: rgb(54, 109, 228); */
+}
+.main-header .logo {
+  width: 150px;
+  float: left;
+}
+h1 {
+  margin-left: 200px;
+  float: left;
+
+  line-height: 120px;
+}
+
+.adress {
+  font-size: 20px;
+  float: right;
+}
+@media screen and (max-width: 996px) {
+  .main-header .logo {
+    width: 100px;
+    float: left;
+  }
+  .wrap {
+    max-width: 920px;
+    margin: 0 auto;
+    background: rgb(199, 180, 142);
+    overflow: hidden;
+  }
+  h1 {
+    margin-left: 100px;
+    float: left;
+    line-height: 80px;
+    font-size: 30px;
+  }
+  .adress {
+    font-size: 10px;
+    float: right;
+  }
+}

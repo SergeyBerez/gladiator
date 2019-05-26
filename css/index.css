@@ -1,0 +1,137 @@
+body,
+html,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(../imges/pattern_1335.png);
+}
+.wrap {
+  max-width: 1300px;
+  margin: 0 auto;
+  background: rgb(199, 180, 142);
+  overflow: hidden;
+
+  height: inherit;
+}
+
+@media screen (max-width 600px) {
+  .main-header .logo {
+    width: 50px;
+    float: none;
+  }
+
+  h1 {
+    padding-left: 200px;
+    float: none;
+    font-size: 20px;
+    line-height: 120px;
+  }
+}
+.main-header {
+  /* min-height: 550px; */
+  /* background: rgb(54, 109, 228); */
+}
+.main-header .logo {
+  width: 150px;
+  float: left;
+}
+h1 {
+  padding-left: 200px;
+  float: left;
+  font-size: 40px;
+  line-height: 120px;
+}
+
+.adress {
+  font-size: 20px;
+  float: right;
+}
+
+.menu {
+  /* background: rgb(228, 94, 94); */
+  /* min-height: 70px; */
+}
+
+.menu ul {
+  /* margin-top: 50px; */
+  min-height: 50px;
+  background: rgba(219, 210, 82, 0.363);
+}
+.menu li {
+  display: inline-block;
+  padding: 0 40px;
+  /* height: 55px; */
+}
+
+.menu li a {
+  text-decoration: none;
+  line-height: 50px;
+  color: #000;
+  display: block;
+  font-size: 18px;
+
+  /* background: rgb(150, 140, 140); */
+}
+
+.menu li a:hover {
+  text-shadow: 1px 1px 1px rgb(221, 207, 207);
+
+  opacity: 0.7;
+}
+.active {
+  text-shadow: 1px 1px 1px rgb(48, 40, 40);
+}
+main {
+  /* background: rgb(228, 94, 210); */
+  /* min-height: 1000px; */
+}
+main .content {
+  padding-top: 30px;
+  background: rgb(160, 126, 63);
+  border: 5px solid rgba(107, 99, 83, 0.562);
+  overflow: hidden;
+  width: 100%;
+  box-sizing: border-box;
+}
+.content-foto img {
+  width: 600px;
+}
+.box1 {
+  width: 40%;
+  float: left;
+  border: 1px solid #000;
+  min-height: 500px;
+  margin-right: 50px;
+  margin-left: 50px;
+}
+.box2 {
+  width: 40%;
+  float: left;
+  border: 1px solid #000;
+  min-height: 500px;
+}
+footer {
+  /* min-height: 200px; */
+}
+.cotial {
+  min-height: 100px;
+}
+.cotial ul {
+  margin-top: 50px;
+
+  list-style-type: none;
+}
+.cotial li {
+  display: inline-block;
+  margin: 0 10px;
+
+  /* height: 55px; */
+}
+.adress-footer {
+  font-size: 20px;
+  float: left;
+  margin-right: 100px;
+}
