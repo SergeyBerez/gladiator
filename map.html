@@ -4,23 +4,25 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="css/index.css" />
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css" />
   </head>
   <body>
     <header class="main-header">
       <div class="wrap">
         <div class="flex-content">
-          <a href="index.html"
+          <a href=""
             ><img
               class="logo"
               src="imges/logo.png"
               alt="Логотип"
               title="GLADIATOR GYM"
-          /></a>
+            />
+          </a>
           <div class="text-logo">
             GLADIATOR GYM
           </div>
+
           <div class="adress">
             Хмельницкий <br />
             ул.Садовая 2/1 <br />
@@ -43,17 +45,25 @@
             <a href="index.html">Главная</a>
           </li>
           <li><a href="galery.html">Фотогалерея</a></li>
-          <li class="acitve-page"><a href="#">Тренировки</a></li>
-          <li><a href="map.html">Мы на карте</a></li>
+          <li><a href="train.html">Тренировки</a></li>
+          <li class="acitve-page">
+            <a href="#">Карта</a>
+          </li>
         </ul>
       </div>
     </nav>
     <main>
       <div class="wrap">
         <div class="main-content">
-          <div class="content-items"></div>
-          <div class="content-items"></div>
-          <div class="content-items"></div>
+          <div class="map">
+            <iframe
+              class="relation_content"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5186.884154527662!2d26.9965581007813!3d49.45726110076724!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4732076e1f658b9d%3A0xc664546bd728346d!2sGladiator+gym!5e0!3m2!1suk!2sua!4v1559227950484!5m2!1suk!2sua"
+              frameborder="0"
+              style="border:0"
+              allowfullscreen
+            ></iframe>
+          </div>
         </div>
       </div>
     </main>
@@ -90,13 +100,11 @@
           </ul>
           <ul class="main-navigation footer">
             <li>
-              <a href="index.html">Главная</a>
+              <a href="./index.html">Главная</a>
             </li>
             <li><a href="galery.html">Фотогалерея</a></li>
-            <li class="acitve-page"><a href="#">Тренировки</a></li>
-            <li>
-              <a href="map.html">Мы на карте</a>
-            </li>
+            <li><a href="train.html">Тренировки</a></li>
+            <li class="acitve-page"><a href="#">Мы на карте</a></li>
           </ul>
           <div class="adress">
             Хмельницкий <br />
@@ -106,6 +114,7 @@
         </div>
       </div>
     </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
