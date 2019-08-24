@@ -38,7 +38,7 @@
     console.log(slider);
   }
 
-  var btn = document.querySelectorAll("button");
+  var btn = document.querySelectorAll(".button-slider div");
 
   var imgs = document.querySelectorAll(".foto img");
   console.log(imgs);

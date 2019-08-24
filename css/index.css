@@ -258,7 +258,38 @@ footer .wrap {
   /* margin: 0 auto; */
   text-align: center;
 }
-.button-slider button {
+.buttonNext {
+  content: "";
+  display: inline-block;
+  /* By using an em scale, the arrows will size with the font */
+  width: 15px;
+  height: 15px;
+  border-right: 3px solid rgb(214, 208, 208);
+  border-top: 3px solid rgb(214, 208, 208);
+  transform: rotate(45deg);
+  cursor: pointer;
+}
+.buttonNext:active {
+  position: relative;
+  left: 3px;
+}
+.buttonPrev {
+  content: "";
+  display: inline-block;
+  /* By using an em scale, the arrows will size with the font */
+  width: 15px;
+  height: 15px;
+  border-right: 3px solid rgb(214, 208, 208);
+  border-top: 3px solid rgb(214, 208, 208);
+  transform: rotate(-135deg);
+  margin-right: 20px;
+  cursor: pointer;
+}
+.buttonPrev:active {
+  position: relative;
+  left: -3px;
+}
+/* .button-slider button {
   text-align: center;
   outline: none;
   color: rgb(94, 72, 38);
@@ -271,8 +302,8 @@ footer .wrap {
 }
 .button-slider button:active {
   position: relative;
-  top: 1px;
-}
+  top: 5px;
+} */
 /* ====== =======стили для вкладки сайта мар */
 .map {
   flex-basis: 800px;
