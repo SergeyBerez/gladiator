@@ -134,7 +134,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-
+  /* align-items: center; */
   justify-content: center;
   /* align-items: flex-end; */
   /* background: rgba(160, 126, 63, 0.76); */
@@ -219,17 +219,17 @@ footer .wrap {
 }
 /*========== стили для галереи  вкладка сайта================ */
 .galery {
-  /* display: flex;
+  display: flex;
 
   flex-wrap: wrap;
-  justify-content: space-around; */
+  justify-content: space-around;
+  align-items: center;
 }
 .foto {
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   position: relative;
-  /* flex-basis: 30%;
-  min-width: 150px; */
+  /* width: 100%; */
   border-radius: 5px;
   /* background-image: url(../imges/pattern_1335.png); */
   box-sizing: border-box;
@@ -253,13 +253,9 @@ footer .wrap {
 .foto span {
   display: none;
 }
-.button-slider {
-  flex-basis: 800px;
-  /* margin: 0 auto; */
-  text-align: center;
-}
+
 .buttonNext {
-  content: "";
+  /* content: ""; */
   display: inline-block;
   /* By using an em scale, the arrows will size with the font */
   width: 15px;
@@ -274,7 +270,7 @@ footer .wrap {
   left: 3px;
 }
 .buttonPrev {
-  content: "";
+  /* content: ""; */
   display: inline-block;
   /* By using an em scale, the arrows will size with the font */
   width: 15px;
@@ -282,7 +278,7 @@ footer .wrap {
   border-right: 3px solid rgb(214, 208, 208);
   border-top: 3px solid rgb(214, 208, 208);
   transform: rotate(-135deg);
-  margin-right: 20px;
+  /* margin-right: 20px; */
   cursor: pointer;
 }
 .buttonPrev:active {
@@ -434,6 +430,21 @@ footer .wrap {
     color: antiquewhite;
     left: 110px;
     cursor: pointer;
+  }
+  /* стили для кнопок  и для фото мобайл ферст */
+  .galery {
+    display: flex;
+
+    justify-content: center;
+  }
+  .foto {
+    flex-basis: 400px;
+    width: 250px;
+    height: 280px;
+  }
+  .button-slider {
+    /* align-self: flex-end; */
+    order: 1;
   }
 
   /* .foto span:hover {
