@@ -1,13 +1,14 @@
 /* ============стили  main для главной страницы  ============*/
 .content-banner {
+  /* align-self: center; */
   flex-basis: 600px;
   /* align-self: flex-end; */
   height: 300px;
   /* margin-left: 0 auto; */
-  margin-right: 0 auto;
+  /* margin-right: 0 auto; */
   position: relative;
   display: flex;
-  justify-content: center;
+
   /* border: 1px solid rgb(124, 46, 46); */
 }
 div.show1 {
