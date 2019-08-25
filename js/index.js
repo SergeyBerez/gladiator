@@ -7,7 +7,7 @@ for (let i = 0; i < contentItems.length; i++) {
     } else {
       contentItems[i].style.color = "rgb(223, 226, 62)";
     }
-  }, 1000);
+  }, 500);
 }
 
 (function() {
@@ -38,7 +38,7 @@ for (let i = 0; i < contentItems.length; i++) {
   }
   let contentItemsAll = document.querySelectorAll(".content-items");
   console.log(contentItemsAll);
-  var newSlider = new Slider(contentItemsAll, "auto", 3000);
+  var newSlider = new Slider(contentItemsAll, "auto", 2000);
 })();
 // let contentItemsAll = document.querySelectorAll(".content-items");
 // console.log(contentItemsAll);

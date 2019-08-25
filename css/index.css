@@ -98,9 +98,6 @@ body {
   top: 0px;
   left: 0px;
 }
-.main-navigation span:nth-child(1) {
-  /* display: none; */
-}
 
 .main-navigation li a {
   color: beige;
@@ -139,7 +136,7 @@ body {
   /* align-items: flex-end; */
   /* background: rgba(160, 126, 63, 0.76); */
   padding: 20px;
-  background: rgba(160, 126, 63, 0.76);
+  background: rgba(245, 160, 3, 0.198);
   /* overflow: hidden; */
   border-radius: 5px;
   box-sizing: border-box;
