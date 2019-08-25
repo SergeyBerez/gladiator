@@ -1,0 +1,37 @@
+/* ============стили  main для главной страницы  ============*/
+.content-banner {
+  flex-basis: 600px;
+  /* align-self: flex-end; */
+  height: 300px;
+  /* margin-left: 0 auto; */
+  margin-right: 0 auto;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  /* border: 1px solid rgb(124, 46, 46); */
+}
+div.show1 {
+  opacity: 1;
+}
+
+.content-items {
+  align-self: center;
+  /* border: 1px solid #000; */
+  position: absolute;
+  padding: 10px;
+  opacity: 0;
+  font-family: inherit;
+  font-size: 20px;
+  letter-spacing: 5px;
+  color: rgb(223, 226, 62);
+  border-radius: 10px;
+  text-align: center;
+  /* box-shadow: 1px 1px 5px rgba(58, 56, 56, 0.39); */
+  text-shadow: 0px 0px 7px rgb(241, 92, 5);
+}
+h3 {
+  /* color: rgb(243, 219, 6); */
+  font-size: 30px;
+  font-family: "Quantico", sans-serif;
+  /* text-shadow: 0px 0px 5px 20px rgba(8, 8, 8, 0.59); */
+}

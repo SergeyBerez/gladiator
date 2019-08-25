@@ -20,7 +20,7 @@ body {
   /* min-height: 150px;
   background: rgb(54, 109, 228); */
 }
-.flex-content {
+.header-flex-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
@@ -135,74 +135,43 @@ body {
   justify-content: center;
   /* align-items: flex-end; */
   /* background: rgba(160, 126, 63, 0.76); */
-  padding: 20px;
-  background: rgba(245, 160, 3, 0.198);
+  /* padding: 20px; */
+  background: rgba(168, 49, 2, 0.198);
   /* overflow: hidden; */
   border-radius: 5px;
   box-sizing: border-box;
   box-shadow: 1px 1px 5px rgba(58, 56, 56, 0.39);
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
 }
 
-/* ============стили  main для главной страницы  ============*/
-.content-banner {
-  flex-basis: 600px;
-  /* align-self: flex-end; */
-  height: 300px;
-  /* margin-left: 0 auto; */
-  margin-right: 0 auto;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  /* border: 1px solid rgb(124, 46, 46); */
-}
-div.show1 {
-  opacity: 1;
-}
-
-.content-items {
-  align-self: center;
-  /* border: 1px solid #000; */
-  position: absolute;
-  padding: 10px;
-  opacity: 0;
-  font-family: inherit;
-  font-size: 20px;
-  letter-spacing: 5px;
-  color: rgb(223, 226, 62);
-  border-radius: 10px;
-  text-align: center;
-  /* box-shadow: 1px 1px 5px rgba(58, 56, 56, 0.39); */
-  text-shadow: 0px 0px 7px rgb(241, 92, 5);
-}
-h3 {
-  /* color: rgb(243, 219, 6); */
-  font-size: 30px;
-  font-family: "Quantico", sans-serif;
-  /* text-shadow: 0px 0px 5px 20px rgba(8, 8, 8, 0.59); */
-}
 /* ==============Стили для FOOTER социальные иконки============ */
 footer .wrap {
   background: rgba(46, 45, 45, 0.568);
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(58, 56, 56, 0.39);
 }
-
+.cotial {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* text-align: right; */
+}
 .cotial-flex {
   padding: 20px;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
 }
-.cotial {
-  text-align: right;
+.main-navigation.footer {
+  align-self: flex-start;
 }
 .adress-foter {
   font-size: 14px;
-
+  align-self: flex-end;
   color: beige;
-  padding-top: 20px;
+  /* padding-top: 20px; */
 }
+/*стили для социальных иконок */
 .cotial-flex li {
   background: white;
   border-radius: 50px;
@@ -214,89 +183,7 @@ footer .wrap {
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(58, 56, 56, 0.39);
 }
-/*========== стили для галереи  вкладка сайта================ */
-.galery {
-  display: flex;
 
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-items: center;
-}
-.foto {
-  width: 400px;
-  height: 400px;
-  position: relative;
-  /* width: 100%; */
-  border-radius: 5px;
-  /* background-image: url(../imges/pattern_1335.png); */
-  box-sizing: border-box;
-  border: 5px solid rgba(0, 0, 0, 0.185);
-  margin: 20px;
-  transition: 0.5s;
-  box-shadow: 0px 0px 5px rgba(12, 12, 12, 0.39);
-}
-
-.foto img {
-  border-radius: inherit;
-  opacity: 0;
-  position: absolute;
-  width: 100%;
-  box-shadow: inherit;
-  transition: opacity 0.5s;
-}
-.foto img.showImg {
-  opacity: 1;
-}
-.foto span {
-  display: none;
-}
-
-.buttonNext {
-  /* content: ""; */
-  display: inline-block;
-  /* By using an em scale, the arrows will size with the font */
-  width: 15px;
-  height: 15px;
-  border-right: 3px solid rgb(214, 208, 208);
-  border-top: 3px solid rgb(214, 208, 208);
-  transform: rotate(45deg);
-  cursor: pointer;
-}
-.buttonNext:active {
-  position: relative;
-  left: 3px;
-}
-.buttonPrev {
-  /* content: ""; */
-  display: inline-block;
-  /* By using an em scale, the arrows will size with the font */
-  width: 15px;
-  height: 15px;
-  border-right: 3px solid rgb(214, 208, 208);
-  border-top: 3px solid rgb(214, 208, 208);
-  transform: rotate(-135deg);
-  /* margin-right: 20px; */
-  cursor: pointer;
-}
-.buttonPrev:active {
-  position: relative;
-  left: -3px;
-}
-/* .button-slider button {
-  text-align: center;
-  outline: none;
-  color: rgb(94, 72, 38);
-  font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  margin: 5px;
-  background: rgb(151, 148, 148);
-  border-radius: 1px;
-  box-shadow: 0px 0px 5px rgba(12, 12, 12, 0.39);
-}
-.button-slider button:active {
-  position: relative;
-  top: 5px;
-} */
 /* ====== =======стили для вкладки сайта мар */
 .map {
   flex-basis: 800px;
@@ -308,9 +195,10 @@ footer .wrap {
   width: 100%;
   height: 100%;
 }
+
 @media screen and (max-width: 550px) {
-  /* ----стиль для главной header навигации----- */
-  .flex-content {
+  /* ---- один стиль для всего сайта header ,footer----- */
+  .header-flex-content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -419,48 +307,6 @@ footer .wrap {
   .main-navigation li:hover {
     /* border-bottom: 1px solid rgb(221, 219, 187); */
   }
-
-  /* крестик стиль для закрывания фото */
-  .foto span {
-    position: absolute;
-    top: -5px;
-    color: antiquewhite;
-    left: 110px;
-    cursor: pointer;
-  }
-  /* стили для кнопок  и для фото мобайл ферст */
-  .galery {
-    display: flex;
-
-    justify-content: center;
-  }
-  .foto {
-    flex-basis: 400px;
-    width: 250px;
-    height: 280px;
-  }
-  .button-slider {
-    /* align-self: flex-end; */
-    order: 1;
-  }
-
-  /* .foto span:hover {
-    display: block;
-    position: absolute;
-    top: -5px;
-    color: antiquewhite;
-    left: 110px;
-    cursor: pointer;
-  } */
-  .scale2 {
-    z-index: 1;
-    display: block;
-
-    transform: scale(2);
-  }
-  /* .foto {
-    flex-basis: 120px;
-  } */
 
   .adress-foter {
     font-size: 10px;
