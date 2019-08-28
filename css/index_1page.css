@@ -43,8 +43,10 @@ div.show1 {
   font-size: 20px;
   letter-spacing: 5px;
   color: rgb(223, 226, 62);
+  border: 1px solid rgb(241, 92, 5);
   border-radius: 10px;
   text-align: center;
+  box-shadow: 0px 0px 15px inset rgb(138, 54, 6);
   /* box-shadow: 1px 1px 5px rgba(58, 56, 56, 0.39); */
   text-shadow: 0px 0px 7px rgb(241, 92, 5);
 }
