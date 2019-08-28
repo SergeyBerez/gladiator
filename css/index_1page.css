@@ -1,26 +1,44 @@
 /* ============стили  main для главной страницы  ============*/
 .content-banner {
   /* align-self: center; */
-  flex-basis: 600px;
+  /* flex-basis: 300px; */
   /* align-self: flex-end; */
-  height: 300px;
+  height: 400px;
   /* margin-left: 0 auto; */
   /* margin-right: 0 auto; */
-  position: relative;
+
   display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 
   /* border: 1px solid rgb(124, 46, 46); */
 }
 div.show1 {
   opacity: 1;
 }
+.content-banner-wrap {
+  height: 300px;
+  /* margin: 0 auto; */
+  width: 400px;
+  position: relative;
+  /* background-color: rgba(0, 0, 255, 0.438); */
+  overflow: hidden;
 
+  /* border: 1px solid rgb(16, 15, 99); */
+}
 .content-items {
-  align-self: center;
-  /* border: 1px solid #000; */
+  top: 0;
+  left: 0;
+
+  height: 300px;
+  width: 400px;
+  box-sizing: border-box;
+  /* width: 100%; */
+  transition: 0.9s;
   position: absolute;
   padding: 10px;
-  opacity: 0;
+  /* opacity: 0; */
   font-family: inherit;
   font-size: 20px;
   letter-spacing: 5px;

@@ -10,6 +10,7 @@ li {
 body {
   background-image: url(../imges/pattern_1335.png);
   opacity: 0.9;
+  color: beige;
 }
 .wrap {
   max-width: 960px;

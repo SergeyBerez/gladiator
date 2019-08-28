@@ -1,0 +1,18 @@
+.article {
+  background: rgba(66, 61, 61, 0.548);
+  box-sizing: border-box;
+  text-align: justify;
+  padding: 20px;
+  border-bottom: 1px dotted rgba(128, 128, 128, 0.561);
+}
+
+.article h3 {
+  text-align: center;
+  color: rgb(216, 208, 208);
+}
+
+.article span {
+  cursor: pointer;
+  display: block;
+  margin: 5px;
+}
