@@ -272,7 +272,8 @@ footer .wrap {
     transition: 0.5s;
     flex-direction: column;
     border-radius: 5px;
-    background: rgba(160, 126, 63, 0.959);
+    background-image: url(../imges/pattern_1335.png);
+    /* background: rgba(160, 126, 63, 0.959); */
     list-style-type: none;
     font-family: "Quantico", sans-serif;
     position: absolute;
