@@ -1,15 +1,3 @@
-let contentItems = document.querySelectorAll(".content-items");
-for (let i = 0; i < contentItems.length; i++) {
-  setInterval(function() {
-    console.log(contentItems[i]);
-    if (contentItems[i].style.color == "rgb(223, 226, 62)") {
-      contentItems[i].style.color = " rgb(243, 219, 6)";
-    } else {
-      contentItems[i].style.color = "rgb(223, 226, 62)";
-    }
-  }, 500);
-}
-
 // (function() {
 //   //модуль слайдера
 
@@ -44,20 +32,12 @@ for (let i = 0; i < contentItems.length; i++) {
 let contentItemsAll = document.querySelectorAll(".content-items");
 
 let slider = [];
-// setInterval(function() {
-//   contentItemsAll[i].classList.remove("show1");
-//   i++;
-//   console.log(i);
-//   if (i >= contentItemsAll.length) {
-//     i = 0;
-//   }
-//   contentItemsAll[i].classList.add("show1");
-// }, 3000);
+
 for (let i = 0; i < contentItemsAll.length; i++) {
   slider[i] = contentItemsAll[i];
   contentItemsAll[i].remove();
 }
-console.log(slider[0]);
+console.log(slider);
 console.log(contentItemsAll);
 let step = 0;
 let offset = 0;
@@ -65,7 +45,9 @@ let offset = 0;
 function draw(arguments) {
   let div = document.createElement("div");
   div = slider[step];
-  // div.classList.add("content-items");
+
+  div.classList.add("content-items");
+
   div.style.left = offset * 400 + "px";
   document.querySelector(".content-banner-wrap").appendChild(div);
 
@@ -82,6 +64,17 @@ function left(arguments) {
   let offset2 = 0;
   for (let i = 0; i < contentItemsAll2.length; i++) {
     contentItemsAll2[i].style.left = offset2 * 400 - 400 + "px";
+    setInterval(function() {
+      if (contentItemsAll2[i].style.color == "orange") {
+        contentItemsAll2[i].style.color = " yellow";
+        // contentItemsAll2[i].classList.add("tarnsform");
+        contentItemsAll2[i].style.boxShadow = "0px 0px 15px inset yellow";
+      } else {
+        // contentItemsAll2[i].classList.remove("tarnsform");
+        contentItemsAll2[i].style.color = "orange";
+        contentItemsAll2[i].style.boxShadow = "0px 0px 15px inset orange";
+      }
+    }, 500);
     offset2++;
   }
 
@@ -92,10 +85,26 @@ function left(arguments) {
 }
 draw();
 draw();
-
-// document.onclick = left;
+slider[0].checked = false;
 
 setInterval(function() {
   left();
-  console.log(1);
-}, 2000);
+}, 3000);
+// document.querySelector(".label").checked;
+// console.log(document.querySelector(".input").checked);
+//функция раскраски элементов баннера  на главной старине
+// let contentItems = document.querySelectorAll(".content-items");
+// console.log(contentItems);
+// for (let i = 0; i < contentItems.length; i++) {
+//   setInterval(function() {
+//     if (contentItems[i].style.color == "rgb(223, 226, 62)") {
+//       contentItems[i].style.color = " rgb(243, 219, 6)";
+//       contentItems[i].classList.add("tarnsform");
+//       contentItems[i].style.boxShadow = "0px 0px 15px inset rgb(243, 219, 6)";
+//     } else {
+//       contentItems[i].classList.remove("tarnsform");
+//       contentItems[i].style.color = "rgb(223, 226, 70)";
+//       contentItems[i].style.boxShadow = "0px 0px 15px inset rgb(223, 226, 70)";
+//     }
+//   }, 100);
+// }

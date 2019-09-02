@@ -1,46 +1,50 @@
 (function() {
   //модуль слайдера
 
-  function Slider(elements, btn, auto, time) {
-    this.element = elements;
+  function Slider(obj) {
+    this.elements = document.querySelectorAll(obj.imgs);
     var i = 0;
-    this.btn = btn;
-    this.time = time || 1000;
-    this.auto = auto;
+    this.btn = document.querySelectorAll(obj.btn);
+    this.time = obj.time || 1000;
+    this.auto = obj.auto;
     var slider = this;
+    console.log(slider);
     slider.next = function() {
-      slider.element[i].classList.remove("showImg");
+      slider.elements[i].classList.remove("showImg");
       i++;
 
-      if (i >= slider.element.length) {
+      if (i >= slider.elements.length) {
         i = 0;
       }
-      slider.element[i].classList.add("showImg");
+      slider.elements[i].classList.add("showImg");
     };
 
     slider.prev = function() {
-      slider.element[i].classList.remove("showImg");
+      slider.elements[i].classList.remove("showImg");
       i--;
 
       if (i < 0) {
-        i = slider.element.length - 1;
+        i = slider.elements.length - 1;
       }
-      slider.element[i].classList.add("showImg");
+      slider.elements[i].classList.add("showImg");
     };
 
-    slider.btn[0].onclick = slider.next;
+    this.btn[0].onclick = slider.next;
 
-    slider.btn[1].onclick = slider.prev;
+    this.btn[1].onclick = slider.prev;
     if (this.auto == "auto") {
       setInterval(slider.next, this.time);
     }
-
-    console.log(slider);
   }
 
-  var btn = document.querySelectorAll(".button-slider div");
+  // var btn = document.querySelectorAll(".button-slider div");
 
-  var imgs = document.querySelectorAll(".foto img");
-  console.log(imgs);
-  var newSlider = new Slider(imgs, btn);
+  // var imgs = document.querySelectorAll(".foto img");
+  // console.log(imgs);
+  var newSlider = new Slider({
+    imgs: ".foto img",
+    btn: ".button-slider div",
+    auto: "auto",
+    time: 1000
+  });
 })();
