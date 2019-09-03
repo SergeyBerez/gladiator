@@ -72,14 +72,17 @@ h3 {
 
 .input {
 
-  /* display: none; */
+  display: none;
 }
 
-/* .input:checked+label {
+#circle1:checked~.label1,
+#circle2:checked~.label2,
+#circle3:checked~.label3,
+#circle4:checked~.label4 {
   background: white;
-} */
+}
 
-.label {
+label {
   display: inline-block;
   margin: 10px;
   border: 3px solid rgb(145, 132, 132);
@@ -87,9 +90,12 @@ h3 {
   position: relative;
   width: 10px;
   height: 10px;
-  background: gray;
+
 }
 
+
+
+.content-items~
 /* label::after {
   position: absolute;
   top: 0;

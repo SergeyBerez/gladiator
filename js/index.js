@@ -37,15 +37,23 @@ for (let i = 0; i < contentItemsAll.length; i++) {
   slider[i] = contentItemsAll[i];
   contentItemsAll[i].remove();
 }
-console.log(slider);
-console.log(contentItemsAll);
+
 let step = 0;
 let offset = 0;
 
 function draw(arguments) {
   let div = document.createElement("div");
   div = slider[step];
+  let label = document.querySelectorAll(".input");
+  let a = slider[step].dataset.count;
+  console.log(a);
+  if (a >= label.length) {
+    a = 0;
 
+    label[a].checked = true;
+  } else {
+    label[a].checked = true;
+  }
   div.classList.add("content-items");
 
   div.style.left = offset * 400 + "px";
@@ -56,6 +64,7 @@ function draw(arguments) {
   } else {
     step++;
   }
+
   offset = 1;
 }
 
@@ -64,6 +73,10 @@ function left(arguments) {
   let offset2 = 0;
   for (let i = 0; i < contentItemsAll2.length; i++) {
     contentItemsAll2[i].style.left = offset2 * 400 - 400 + "px";
+
+    // for (let i = 0; i < label.length; i++) {
+    //   label[i].checked = true;
+    // }
     setInterval(function() {
       if (contentItemsAll2[i].style.color == "orange") {
         contentItemsAll2[i].style.color = " yellow";
@@ -90,6 +103,7 @@ slider[0].checked = false;
 setInterval(function() {
   left();
 }, 3000);
+
 // document.querySelector(".label").checked;
 // console.log(document.querySelector(".input").checked);
 //функция раскраски элементов баннера  на главной старине
