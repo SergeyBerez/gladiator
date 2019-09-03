@@ -19,7 +19,7 @@
 .content-banner-wrap {
   height: 300px;
   /* margin: 0 auto; */
-  width: 400px;
+  width: 390px;
   position: relative;
   /* background-color: rgba(0, 0, 255, 0.438); */
   overflow: hidden;
@@ -32,7 +32,7 @@
   left: 0;
 
   height: 300px;
-  width: 390px;
+  width: 380px;
   box-sizing: border-box;
   /* width: 100%; */
   transition: 0.9s;
