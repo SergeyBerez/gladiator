@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Quantico:400,700&display=swap");
+
 body,
 html,
 ul,
@@ -7,11 +8,13 @@ li {
   padding: 0;
   font-family: "Quantico", sans-serif;
 }
+
 body {
   background-image: url(../imges/pattern_1335.png);
   opacity: 0.9;
   color: beige;
 }
+
 .wrap {
   max-width: 960px;
   margin: 0 auto;
@@ -21,6 +24,7 @@ body {
   /* min-height: 150px;
   background: rgb(54, 109, 228); */
 }
+
 .header-flex-content {
   display: flex;
   flex-wrap: wrap;
@@ -30,6 +34,7 @@ body {
   /* background: rgba(219, 210, 82, 0.363); */
   /* padding: 0 0 -50px 0; */
 }
+
 .main-header a {
   flex-basis: 200px;
   display: block;
@@ -41,6 +46,7 @@ body {
 .main-header img {
   width: 100%;
 }
+
 .text-logo {
   font-size: 50px;
   flex-basis: 400px;
@@ -52,6 +58,7 @@ body {
   position: relative;
   /* display: flex; */
 }
+
 .text-logo::after {
   content: "Тренаженый зал";
   font-family: "Quantico", sans-serif;
@@ -69,16 +76,14 @@ body {
   margin-left: auto;
   /* order: 1; */
 }
+
 /*  кнопку гамбургер div c тегом leble img--- */
 .menu-hidden {
   opacity: 0;
   transition: opacity 0.5s;
   /* cursor: pointer; */
 }
-/* скрываем тег инпута */
-#menu-tag {
-  display: none;
-}
+
 /* ---------ul главная навигация -------- */
 .main-navigation {
   /* margin-top: 50px; */
@@ -89,9 +94,11 @@ body {
   /* background: rgba(219, 210, 82, 0.363); */
   list-style-type: none;
 }
+
 .main-navigation span {
   display: none;
 }
+
 .main-navigation li {
   padding: 20px;
   transition: 0.5s;
@@ -120,6 +127,7 @@ body {
   text-shadow: 0px 0px 1px rgb(252, 252, 252);
   /* border-bottom: 1px solid rgb(221, 219, 187); */
 }
+
 .acitve-page {
   opacity: 1;
   background: rgba(46, 45, 45, 0.185);
@@ -127,6 +135,7 @@ body {
   box-shadow: 1px 1px 5px rgba(58, 56, 56, 0.541);
   text-shadow: 0px 0px 1px rgb(253, 253, 253);
 }
+
 /* одинаковый стиль для всех страниц */
 .main-content {
   display: flex;
@@ -152,33 +161,39 @@ footer .wrap {
   border-radius: 5px;
   box-shadow: 1px 1px 5px rgba(58, 56, 56, 0.39);
 }
+
 .cotial {
   display: flex;
   flex-direction: column;
   justify-content: center;
   /* text-align: right; */
 }
+
 .cotial-flex {
   padding: 20px;
   display: flex;
   justify-content: space-around;
   list-style-type: none;
 }
+
 .main-navigation.footer {
   align-self: flex-start;
 }
+
 .adress-foter {
   font-size: 14px;
   align-self: flex-end;
   color: beige;
   /* padding-top: 20px; */
 }
+
 /*стили для социальных иконок */
 .cotial-flex li {
   background: white;
   border-radius: 50px;
   height: 50px;
 }
+
 /* --------------------футер навигация ----- */
 .main-navigation.footer li:hover {
   background: rgba(46, 45, 45, 0.568);
@@ -193,13 +208,15 @@ footer .wrap {
   margin: 0 auto;
   /* border: 1px transparent #000; */
 }
+
 .map iframe {
   width: 100%;
   height: 100%;
 }
 
 @media screen and (max-width: 550px) {
-  /* ---- один стиль для всего сайта header ,footer----- */
+
+  /* ---- один стиль для всего сайта header и footer----- */
   .header-flex-content {
     display: flex;
     flex-wrap: wrap;
@@ -210,6 +227,7 @@ footer .wrap {
     /* background: rgba(219, 210, 82, 0.363); */
     padding: 0 0 -50px 0;
   }
+
   .main-header a {
     flex-basis: 100px;
 
@@ -217,6 +235,12 @@ footer .wrap {
     max-width: 100px;
     /* align-self: center; */
   }
+
+  .main-content {
+    transition: 0.9s;
+
+  }
+
   .text-logo {
     /* margin: 0 auto; */
     /* margin-left: 120px; */
@@ -238,6 +262,7 @@ footer .wrap {
     top: -5px;
     text-shadow: 0 0px 5px rgba(36, 34, 34, 0.59);
   }
+
   .adress {
     position: absolute;
     visibility: hidden;
@@ -249,6 +274,7 @@ footer .wrap {
     position: relative;
     /* background: red; */
   }
+
   /*--------------- кнопка гамбургер */
   .menu-hidden {
     transition: 0.5s;
@@ -257,20 +283,27 @@ footer .wrap {
     color: aliceblue;
     width: inherit;
   }
-  .menu-hidden label {
+
+  .img-show-menu {
+    background: rgba(255, 208, 0, 0.63);
+    border-radius: 5px;
     cursor: pointer;
+    color: aliceblue;
   }
+
+
+
   /* создаем стили для скрытого меню */
   .main-navigation {
     display: flex;
-    /* width: 0px;
-    overflow: hidden; */
-    opacity: 0;
-
-    /* height: 0px; */
+    /* width: 0px; */
+    z-index: 1;
+    opacity: 1;
+    /* overflow: hidden;
+    height: 0px; */
     flex-wrap: wrap;
-    align-items: flex-start;
-    transition: 0.5s;
+    /* align-items: flex-start; */
+
     flex-direction: column;
     border-radius: 5px;
     background-image: url(../imges/pattern_1335.png);
@@ -279,21 +312,20 @@ footer .wrap {
     font-family: "Quantico", sans-serif;
     position: absolute;
     left: -150px;
-
+    transition: 0.5s;
     box-shadow: 1px 1px 5px rgba(58, 56, 56, 0.39);
   }
-  .main-navigation.show {
-    left: 0;
-    opacity: 1;
-    z-index: 1;
-  }
-  /* #menu-tag:checked ~ .main-navigation {
-    left: 0;
 
+  /* -------------добавляем класс для меню скривать показивать--- */
+  .show {
+    left: 0;
     opacity: 1;
-    z-index: 1;
-  } */
-  .main-navigation > span {
+
+
+  }
+
+
+  .main-navigation>span {
     display: block;
     font-family: "Quantico", sans-serif;
     color: aliceblue;
@@ -307,6 +339,7 @@ footer .wrap {
     width: 140px;
     transition: 0.5s;
   }
+
   .main-navigation li:hover {
     /* border-bottom: 1px solid rgb(221, 219, 187); */
   }

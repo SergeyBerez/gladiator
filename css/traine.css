@@ -1,17 +1,33 @@
 .article {
+  width: 960px;
   box-sizing: border-box;
   text-align: justify;
-  padding: 20px;
   border-bottom: 1px dotted rgba(128, 128, 128, 0.561);
+
 }
 
 .article h3 {
+
   text-align: center;
   color: rgb(216, 208, 208);
 }
 
-.article span {
+.show-content {
   cursor: pointer;
+  margin-left: 20px;
+
+}
+
+.content {
+
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 5%;
+  display: none;
+}
+
+.show {
+
   display: block;
-  margin: 5px;
+
 }

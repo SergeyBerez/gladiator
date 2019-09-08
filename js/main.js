@@ -30,36 +30,30 @@
 //     e.target.style.display = "none";
 //   }
 // });
-var spans = document.querySelectorAll(".foto span");
-var fotos = document.querySelectorAll(".foto");
 
-var spans = document.querySelectorAll(".foto span");
-
-for (let i = 0; i < fotos.length; i++) {
-  fotos[i].addEventListener("click", function(e) {
-    console.log(this);
-
-    // fotos[i].style.transform = "scale(1)";
-    fotos[i].classList.toggle("scale2");
-  });
-}
 // добавляем события за закритие гамбургер и показа меню
 let menuHidden = document.querySelector(".menu-hidden");
-menuHidden.addEventListener("click", function(e) {
-  this.style.opacity = "0";
-  document.querySelector(".main-navigation").classList.add("show");
-  // var a = document.querySelector("#menu-tag");
+let navBlock = document.querySelector(".main-navigation");
 
-  // if (!a.checked) {
-  //   this.style.opacity = "0";
-  // }
+menuHidden.addEventListener("click", function(e) {
+  // menuHidden.style.opacity = "0";
+  navBlock.classList.add("show");
+  this.style.opacity = "0";
 });
 
-let span = document.querySelector("ul>span");
-span.onclick = function() {
-  document.querySelector(".main-navigation").classList.remove("show");
-  menuHidden.style.opacity = "1";
-};
+document.addEventListener("click", function(e) {
+  if (!e.target.classList.contains("img-show-menu")) {
+    navBlock.classList.remove("show");
+    menuHidden.style.opacity = "1";
+    console.log(1);
+  }
+});
+
+// let spn = document.querySelector("ul>span");
+// spn.onclick = function() {
+//   navBlock.classList.remove("show");
+//   menuHidden.style.opacity = "1";
+// };
 // menu.addEventListener("click", function(e) {
 //   this.style.opacity = "0";
 // });
@@ -69,4 +63,8 @@ span.onclick = function() {
 //   for (let i = 0; i < fotos.length; i++) {
 //     fotos[i].classList.remove("scale2");
 //   }
+// });
+
+// $(".menu-hidden").on("click", function() {
+//   $(".main-navigation").slideToggle(400);
 // });

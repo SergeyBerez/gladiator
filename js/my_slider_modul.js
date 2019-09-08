@@ -48,3 +48,14 @@
     time: 1000
   });
 })();
+
+// var fotos = document.querySelectorAll(".foto");
+
+// for (let i = 0; i < fotos.length; i++) {
+//   fotos[i].addEventListener("click", function(e) {
+//     console.log(this);
+
+//     // fotos[i].style.transform = "scale(1)";
+//     fotos[i].classList.toggle("scale2");
+//   });
+// }
