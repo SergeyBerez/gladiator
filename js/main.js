@@ -50,9 +50,10 @@ document.addEventListener("click", function(e) {
 });
 
 window.addEventListener("resize", function() {
-  if (menuHidden.style.opacity == "0") {
-    menuHidden.style.opacity = "1";
-  } else menuHidden.style.opacity = "0";
+  menuHidden.style.opacity = "0";
+  // if (menuHidden.style.opacity == "0") {
+  //   menuHidden.style.opacity = "1";
+  // } else menuHidden.style.opacity = "0";
 });
 
 // let spn = document.querySelector("ul>span");
