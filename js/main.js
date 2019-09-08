@@ -32,7 +32,7 @@
 // });
 
 // добавляем события за закритие гамбургер и показа меню
-let menuHidden = document.querySelector(".menu-hidden");
+let menuHidden = document.querySelector(".img-show-menu");
 let navBlock = document.querySelector(".main-navigation");
 
 menuHidden.addEventListener("click", function(e) {
@@ -51,9 +51,9 @@ document.addEventListener("click", function(e) {
 
 window.addEventListener("resize", function() {
   menuHidden.style.opacity = "0";
-  // if (menuHidden.style.opacity == "0") {
-  //   menuHidden.style.opacity = "1";
-  // } else menuHidden.style.opacity = "0";
+  if (menuHidden.style.opacity == "0") {
+    menuHidden.style.opacity = "1";
+  } else menuHidden.style.opacity = "0";
 });
 
 // let spn = document.querySelector("ul>span");
